@@ -1,0 +1,6 @@
+services:
+  app:
+    image: tarkov-gear-generator
+    build: .
+    ports:
+      - 8000:80

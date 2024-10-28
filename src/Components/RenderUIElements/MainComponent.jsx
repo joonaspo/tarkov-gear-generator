@@ -17,7 +17,6 @@ export const MainComponent = () => {
 
   useEffect(() => {
     if (data) {
-      console.log(data);
       setItemsToState(data);
     }
   }, [data, setItemsToState]);
