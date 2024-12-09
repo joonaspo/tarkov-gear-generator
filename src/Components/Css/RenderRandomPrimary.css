@@ -30,7 +30,7 @@
   position: relative;
   top: -0.5vw;
   background-color: #353935;
-  padding: 0.1em;
+  padding: 0.1vw;
   box-sizing: border-box;
   width: 8vw;
   margin-left: 4.5vw;
@@ -38,6 +38,7 @@
 }
 
 .primary-title-container {
+  font-size: 0.6vw;
   background: rgb(38, 38, 38);
   background: linear-gradient(
     180deg,
@@ -68,7 +69,7 @@
   -webkit-text-stroke-color: #f5f5f5;
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 959px) {
   .primary-container {
     width: 58vw;
     margin-left: 4vw;
@@ -94,5 +95,18 @@
   }
   .no-primary-to-show {
     font-size: 3vw;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .primary-container {
+    height: 8vw;
+  }
+  .primary-name-container {
+    margin-top: -0.2vw;
+  }
+  .primary-icon-container {
+    height: 6.6vw;
+    margin-top: 0.01vw;
   }
 }

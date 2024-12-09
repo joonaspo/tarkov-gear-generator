@@ -80,7 +80,7 @@
   -webkit-text-stroke-color: #f5f5f5;
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 959px) {
   .pistol-container {
     width: 24vw;
     height: 30vw;
@@ -111,5 +111,17 @@
     height: 4vw;
     width: 24vw;
     font-size: 2.5vw;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .pistol-container {
+    height: 8vw;
+  }
+  .pistol-name-container {
+    margin-top: -0.2vw;
+  }
+  .pistol-icon-container {
+    margin-top: 0.01vw;
+    height: 6.6vw;
   }
 }

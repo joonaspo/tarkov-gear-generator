@@ -16,7 +16,7 @@ export const Menu = ({ refetch }) => {
 
   return (
     <div className='settings-container-wrapper'>
-      <h2>Settings</h2>
+      <h2>Generate Loadout</h2>
       <div className='settings-container'>
         <div className='settings-container-bottom'>
           {timeoutState ? (

@@ -22,7 +22,7 @@ export const MainComponent = () => {
   }, [data, setItemsToState]);
 
   return (
-    <div className='character-container'>
+    <>
       {loading ? (
         <div className='loading-container'>
           Loading...
@@ -40,6 +40,6 @@ export const MainComponent = () => {
         </div>
       )}
       {error ? <div className='loading-container'>{error.message}</div> : null}
-    </div>
+    </>
   );
 };

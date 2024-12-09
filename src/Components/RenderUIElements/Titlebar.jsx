@@ -1,5 +1,6 @@
 import '../Css/Titlebar.css';
 import { Link } from 'react-router-dom';
+import { IoLogoGithub, IoMdInformationCircle } from 'react-icons/io';
 
 export const Titlebar = () => {
   return (
@@ -14,7 +15,13 @@ export const Titlebar = () => {
         </div>
         <div className='link-wrapper'>
           <Link to='/info' className='link-text' data-testid='infoLink'>
-            Info
+            <IoMdInformationCircle />
+          </Link>
+          <Link
+            to='https://github.com/joonaspo/tarkov-gear-generator'
+            target='_blank'
+            className='link-text'>
+            <IoLogoGithub />
           </Link>
         </div>
       </div>

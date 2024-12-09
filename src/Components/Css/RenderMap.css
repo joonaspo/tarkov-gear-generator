@@ -38,7 +38,7 @@
   justify-content: center;
   align-items: center;
   color: whitesmoke;
-  font-size: 1vw;
+  font-size: 0.6vw;
   width: 27.3vw;
   text-transform: uppercase;
 }
@@ -73,7 +73,7 @@
   -webkit-text-stroke-color: #f5f5f5;
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 959px) {
   .map-container {
     width: 92vw;
     margin-left: 4vw;
@@ -100,5 +100,16 @@
     height: 4vw;
     width: 92vw;
     font-size: 2.5vw;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .map-container {
+    height: 8vw;
+  }
+  .map-name-container {
+    font-size: 3vw;
+  }
+  .map-image-container {
+    margin-top: 0.05vw;
   }
 }
