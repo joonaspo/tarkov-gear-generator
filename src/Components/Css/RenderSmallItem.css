@@ -6,7 +6,10 @@
 }
 
 .small-item-icon {
-  height: 100%;
+  width: 99%;
+  height: auto;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 .small-item-title-container {
@@ -109,10 +112,13 @@
 
 @media only screen and (min-width: 961px) {
   .small-item-container {
-    width: 7.1vw;
-    height: auto;
+    height: 8vw;
   }
   .small-item-name-container {
     margin-top: -0.4vw;
+  }
+  .small-item-icon-container,
+  .no-small-item-to-show {
+    height: 6.6vw;
   }
 }
