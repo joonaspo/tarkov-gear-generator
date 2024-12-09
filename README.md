@@ -20,7 +20,7 @@ The application is hosted [**here**](https://tarkov-gear-generator.onrender.com/
 
 Frontend's UI is built with **React**, global state is managed with [**Zustand**](https://zustand.docs.pmnd.rs/getting-started/introduction) and API queries are handled with **React Query**.
 
-I began to work on this project when I was still learning React, that's why its built in JavaScript. Previously Redux Toolkit was used with Apollo GraphQL but it proved to be a bit too overkill and heavy for a project of this size and it just made more sense to move the application logic from the frontend to the backend.
+I began to work on this project when I was still learning React, that's why its built in JS instead of TS. Previously Redux Toolkit was used with Apollo GraphQL to handle everything browser-side but it proved to be a bit too overkill and heavy for a project of this size and it just made more sense to move the application logic from the frontend to the backend.
 
 ---
 
@@ -31,7 +31,7 @@ Actual "business logic" is mostly found on the backend side. Repo for the backen
 > The data required is fetched from a **GraphQL API** at set intervals of 60 minutes and saved into a redis database. Because the actual game has set limitations to what items can be worn together, the app's randomization logic prioritizes for example a headwear over headphones.
 >
 > - In practice this means a headwear item is randomized first, and depending on that items `blocksHeadphones: boolean` property, random headphones are randomized, or not.
-> - The same logic is applied to a chest rig with its `type: "Chest" | "Armored"` property. As with headwear, with certain chest rigs, no separate body armor can be worn.
+> - The same logic is applied to a chest rig with its `type: "Chest" | "Armored"` property. Also with certain chest rigs, no separate body armor can be worn.
 
 ### **How the App Works**:
 
@@ -44,7 +44,7 @@ Actual "business logic" is mostly found on the backend side. Repo for the backen
 ## **Testing & CI/CD**
 
 - **Unit Testing**: Done with **Vitest** and **React Testing Library**.
-- **E2E Testing**: Will be done using **Playwright**.
+
 - **CI/CD**: Automated testing and deployment is handled through **Github Actions** pipeline with deployment on **Render**.
 
 ---
